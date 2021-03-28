@@ -7,9 +7,9 @@ document.getElementById("calcular").addEventListener("click", function() {
     var totalVenta = document.getElementById("totalVenta") ;
     var ganancia = document.getElementById("ganancia") ;
 	
-	form
-	<form id="calcular">_</form>
-	form.reset()
+
+	<document id="calcular">_</form>
+	document.reset()
 	
 	})
 
