@@ -8,7 +8,7 @@ document.getElementById("calcular").addEventListener("click", function() {
     var ganancia = document.getElementById("ganancia") ;
 	
 	let calcular = document.querySelector('button');
-	let inputs = document.querySelectorAll('inut');
+	let inputs = document.querySelectorAll('input');
 	
 	calcular.addEventListener('click',() => {
 		inputs.forEach(input => input.value = '');
