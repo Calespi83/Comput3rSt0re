@@ -76,58 +76,64 @@
 		<br>
 		<br>
 		<br>
-		<div class="col-12 col-md-6 col-lg-6">		
-		<fieldset>
-				<legend>Convertir</legend>		
-					<h1>Tamaño de datos</h1>
+		<br>
+		<br>
+		<br>
+		<br>
+		<div class="col-12 col-md-3 col-lg-3"></div>
+			<div class="col-12 col-md-6 col-lg-6">		
+			<fieldset>
+					<legend>Convertir</legend>		
+						<h1>Tamaño de datos</h1>
 
-				<script>
-					function calcular(){
-    
-						var a = document.f1.a.value;
-						var b = document.f1.b1.value;
-						var x = document.f1.b2.value;
-						var r = document.f1.c.value;
-						r=(parseFloat(a)*parseFloat(x))/parseFloat(b);
-					   document.f1.c.value=r;
-					}
-				</script> 
+					<script>
+						function calcular(){
+		
+							var a = document.f1.a.value;
+							var b = document.f1.b1.value;
+							var x = document.f1.b2.value;
+							var r = document.f1.c.value;
+							r=(parseFloat(a)*parseFloat(x))/parseFloat(b);
+						   document.f1.c.value=r;
+						}
+					</script> 
 
-					<div class="container" class="mb-3" >
-						<form name="f1" action="conversor.html" method="POST">
-							<div class="row mt-4">
-								  <input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" >																										
-										<select name="b1" class="form-control" >
-										  <Option disabled>Seleccione una opcion</opcion>
-										  <option value="1">Byte</option>
-										  <option value="1000">Kilobyte</option>	
-										  <option value="1000000">Megabyte</option>
-										  <option value="1000000000" >Gigabyte</option>
-										  <option value="1000000000000">Terabyte</option>
-										</select>
-									
-									<div class= "row mt-4">	
-									  <input type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary"  style="background-color: #000000">
-									</div>
-									<div class= "row mt-4">	
-										<select name="b2" class="form-control">
-										  <Option  disabled>Seleccione una opcion</option>	 
-										  <option value="1">Byte</option>
-										  <option value="1000">Kilobyte</option>	
-										  <option value="1000000">Megabyte</option>
-										  <option value="1000000000" >Gigabyte</option>
-										  <option value="1000000000000">Terabyte</option>
-										</select>
-									</div>
-									<fieldset disabled></fieldset>
-								<div class= "row mt-4" >
-										<input type="text" class="form-control" id="c" name="c" placeholder="Resultado">
-								</div>	
-							</div>
-  						</form>					
-					</div>
-		</fieldset>
-		</div>	
+						<div class="container" class="mb-3" >
+							<form name="f1" action="conversor.html" method="POST">
+								<div class="row mt-4">
+									  <input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" >																										
+											<select name="b1" class="form-control" >
+											  <Option disabled>Seleccione una opcion</opcion>
+											  <option value="1">Byte</option>
+											  <option value="1000">Kilobyte</option>	
+											  <option value="1000000">Megabyte</option>
+											  <option value="1000000000" >Gigabyte</option>
+											  <option value="1000000000000">Terabyte</option>
+											</select>
+										
+										<div class= "row mt-4">	
+										  <input type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary"  style="background-color: #000000">
+										</div>
+										<div class= "row mt-4">	
+											<select name="b2" class="form-control">
+											  <Option  disabled>Seleccione una opcion</option>	 
+											  <option value="1">Byte</option>
+											  <option value="1000">Kilobyte</option>	
+											  <option value="1000000">Megabyte</option>
+											  <option value="1000000000" >Gigabyte</option>
+											  <option value="1000000000000">Terabyte</option>
+											</select>
+										</div>
+										<fieldset disabled></fieldset>
+									<div class= "row mt-4" >
+											<input type="text" class="form-control" id="c" name="c" placeholder="Resultado">
+									</div>	
+								</div>
+							</form>					
+						</div>		
+			</fieldset>
+			</div>	
+		<div class="col-12 col-md-3 col-lg-3"></div>
         </header>
         <!-- Copyright Section-->			
 			<div class="copyright py-4 text-center text-white">	
