@@ -17,6 +17,14 @@ document.getElementById("calcular").addEventListener("click", function() {
     totalVenta.value = parseInt( totalIva) + parseInt(compra.value) + parseInt(totalGanancia);
     ganancia.value = totalGanancia;
 
+document.getElementById("calcular").addEventListener("click", function(clear) {
+
+    var compra =  document.getElementById("compra")  ;
+    var utilidad = document.getElementById("utilidad") ;
+    var iva = document.getElementById("iva") ;
+    var totalVenta = document.getElementById("totalVenta") ;
+    var ganancia = document.getElementById("ganancia") ;
+}
   });
 
 
