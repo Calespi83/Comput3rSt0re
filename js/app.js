@@ -7,11 +7,10 @@ document.getElementById("calcular").addEventListener("click", function() {
     var totalVenta = document.getElementById("totalVenta") ;
     var ganancia = document.getElementById("ganancia") ;
 	
-	let calcular = document.querySelector('button');
-	let inputs = document.querySelectorAll('input');
+	form
+	<form id="calcular">_</form>
+	form.reset()
 	
-	calcular.addEventListener('click',() => {
-		inputs.forEach(input => input.value = '');
 	})
 
     var totalIva;
