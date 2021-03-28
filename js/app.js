@@ -16,6 +16,13 @@ document.getElementById("calcular").addEventListener("click", function() {
 
     totalVenta.value = parseInt( totalIva) + parseInt(compra.value) + parseInt(totalGanancia);
     ganancia.value = totalGanancia;
+	
+	let calcular = document.querySelector('button');
+	let inputs = document.querySelectorAll('inut');
+	
+	calcular.addEventListener('click',() => {
+		inputs.forEach(input => input.value = '');
+	})
   });
 
 
