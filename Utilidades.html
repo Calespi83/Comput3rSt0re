@@ -94,15 +94,17 @@
 									<form name="f1" action="conversor.html" method="POST">
 										<div class="row mt-4">
 											<label for="basic-url" class="form-label width:100%">Valor inicial a convertir</label>
-												<input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" >
+												<div class="input-group mb-3">
+													<input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" >
+												</div>
 											<label for="basic-url" class="form-label width:100%">Unidad de medida de datos inicial</label>
 												<select name="b1" class="form-control" >
-												<Option disabled>Unidad de medida inicial</opcion>
-												<option value="1">Byte</option>
-												<option value="1000">Kilobyte</option>	
-												<option value="1000000">Megabyte</option>
-												<option value="1000000000" >Gigabyte</option>
-												<option value="1000000000000">Terabyte</option>
+													<Option disabled>Unidad de medida inicial</opcion>
+													<option value="1">Byte</option>
+													<option value="1000">Kilobyte</option>	
+													<option value="1000000">Megabyte</option>
+													<option value="1000000000" >Gigabyte</option>
+													<option value="1000000000000">Terabyte</option>
 												</select>
 										</div>
 										<div class= "row mt-4">
@@ -117,9 +119,7 @@
 												</select>
 										</div>
 											<div class= "row">
-											<div class= "row">											
-											<br>
-											<button type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary">Convertir</button>
+												<button type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary">Convertir</button>
 											</div>
 										<div class= "row mt-4" >
 											<label for="basic-url" class="form-label width:100%">Resultado de la conversión</label>
