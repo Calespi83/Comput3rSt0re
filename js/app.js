@@ -6,15 +6,13 @@ document.getElementById("calcular").addEventListener("click", function() {
     var iva = document.getElementById("iva") ;
     var totalVenta = document.getElementById("totalVenta") ;
     var ganancia = document.getElementById("ganancia") ;
-	
 
-	<document id="calcular">_</form>
-	document.reset()
+	var totalIva;
+    var totalGanancia;
 	
 	})
 
-    var totalIva;
-    var totalGanancia;
+    
 
     //Calcular ganancia
     totalIva = (compra.value * iva.value)/100;
