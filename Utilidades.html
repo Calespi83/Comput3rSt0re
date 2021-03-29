@@ -102,9 +102,11 @@
 						<div class="container">
 							<form name="f1" action="conversor.html" method="POST">
 								<div class="row mt-4">
-									  <input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" >																										
+								<label>Valor inicial a convertir</label>
+									  <input type="text" class="form-control" id="a" name="a" placeholder="Digite aquí el valor a convertir" >
+								<label>Unidad de medida de datos</label>
 											<select name="b1" class="form-control" >
-											  <Option disabled>Seleccione una opcion</opcion>
+											  <Option disabled>Unidad de medida nicial</opcion>
 											  <option value="1">Byte</option>
 											  <option value="1000">Kilobyte</option>	
 											  <option value="1000000">Megabyte</option>
@@ -112,9 +114,7 @@
 											  <option value="1000000000000">Terabyte</option>
 											</select>
 										
-										<div class= "row mt-4">	
-										  <button type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary">Convertir</button>
-										</div>
+										
 										<div class= "row mt-4">	
 											<select name="b2" class="form-control">
 											  <Option  disabled>Seleccione una opcion</option>	 
@@ -125,7 +125,9 @@
 											  <option value="1000000000000">Terabyte</option>
 											</select>
 										</div>
-										<fieldset disabled></fieldset>
+										<div class= "row">	
+										  <button type="Button" name="" value="convertir" onclick="calcular()" class="btn btn-primary">Convertir</button>
+										</div>
 									<div class= "row mt-4" >
 											<input type="text" class="form-control" id="c" name="c" placeholder="Resultado">
 									</div>	
