@@ -15,7 +15,46 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
         <!-- Core theme CSS (includes Bootstrap)-->
         <link href="css/styles.css" rel="stylesheet" />
-    </head>
+		
+		<script language = "JavaScript">
+<! -
+function byteConverter () {
+document.converter.kb.value = document.converter.byte.value / 1000
+document.converter.mb.value = document.converter.byte.value / (1000 * 1000)
+document.converter.gb.value = document.converter.byte.value / (1000 * 1000 * 1000)
+document.converter.tb.value = document.converter.byte.value / (1000 * 1000 * 1000 * 1000)
+}
+
+function kbConverter () {
+document.converter.byte.value = document.converter.kb.value * 1000
+document.converter.mb.value = document.converter.kb.value / 1000
+document.converter.gb.value = document.converter.kb.value / (1000 * 1000)
+document.converter.tb.value = document.converter.kkb.value / (1000 * 1000 * 1000)
+}
+
+function mbConverter () {
+document.converter.byte.value = document.converter.mb.value * 1000 * 1000
+document.converter.kb.value = document.converter.mb.value * 1000
+document.converter.gb.value = document.converter.mb.value / 1000
+document.converter.tb.value = document.converter.mb.value / (1000 * 1000)
+}
+
+function gbConverter () {
+document.converter.byte.value = document.converter.gb.value * 1000 * 1000 * 1000
+document.converter.kb.value = document.converter.gb.value * 1000 * 1000
+document.converter.mb.value = document.converter.gb.value * 1000
+document.converter.tb.value = document.converter.gb.value / (1000)
+}
+
+function tbConverter () {
+document.converter.byte.value = document.converter.tb.value * 1000 * 1000 * 1000 * 1000
+document.converter.kb.value = document.converter.tb.value * 1000 * 1000 * 1000
+document.converter.mb.value = document.converter.tb.value * 1000 * 1000
+document.converter.gb.value = document.converter.tb.value * 1000
+}
+// ->
+</script>
+</head>
     <body id="page-top">
         <!-- Título página-->
         <nav class="navbar navbar-expand-lg bg-secondary text-uppercase fixed-top" id="mainNav">
@@ -73,17 +112,7 @@
 						</div>
 						<div class="col-3 col-md-3 col-lg-3"></div>
 					</div>			
-					
-				<script>
-					function calcular(){		
-						var a = document.f1.a.value;
-						var b = document.f1.b1.value;
-						var x = document.f1.b2.value;
-						var r = document.f1.c.value;
-						r=(parseFloat(b)*parseFloat(x))/parseFloat(a);
-						document.f1.c.value=r;
-					}
-				</script>						
+									
 					<div class="row mt-4">	
 							<div class="col-3 col-md-3 col-lg-3"></div>
 								<div class="col-6 col-md-6 col-lg-6 col-lg-6">							
@@ -91,37 +120,12 @@
 										<legend>Convertir</legend>		
 										<h1>Tamaño de datos</h1>
 									<form name="f1" action="conversor.html" method="POST">
-										<div class="row mt-4">
-											<label for="basic-url" class="form-label width:100%">Valor inicial a convertir</label>
-												<div class="input-group mb-3">
-													<input type="number" class="form-control" id="a" name="a" placeholder="Digite el valor a convertir" >
-												</div>
-											<label for="basic-url" class="form-label width:100%">Unidad de medida de datos inicial</label>
-												<select name="b1" class="form-control">
-													<Option disabled>Unidad de medida inicial</opcion>
-													<option value="1">Byte</option>
-													<option value="1000">Kilobyte</option>	
-													<option value="1000000">Megabyte</option>
-													<option value="1000000000" >Gigabyte</option>
-													<option value="1000000000000">Terabyte</option>
-												</select>
-										</div>
-										<div class= "row mt-4">
-											<label for="basic-url" class="form-label width:100%">Unidad de medida de datos final</label>										
-												<select name="b2" class="form-control">
-													<Option  disabled>Seleccione una opcion</option>	 
-													<option value="1">Byte</option>
-													<option value="1000">Kilobyte</option>	
-													<option value="1000000">Megabyte</option>
-													<option value="1000000000" >Gigabyte</option>
-													<option value="1000000000000">Terabyte</option>
-												</select>
-										</div>
-												<button type="Button" name="" value="convertir" onclick="calcular()" class="btn_convertir">Convertir</button>
-										<div class= "row mt-4" >
-											<label for="basic-url" class="form-label width:100%">Resultado de la conversión</label>
-												<input type="text" class="form-control" id="c" name="c" placeholder="Resultado">
-										</div>
+										Byte: <input type = "text" name = "byte" onChange = "byteConverter ()" /> <br />
+	KB: <input type = "text" name = "kb" onChange = "kbConverter ()" /> <br />
+	MB: <input type = "text" name = "mb" onChange = "mbConverter ()" /> <br />
+	GB: <input type = "text" name = "gb" onChange = "gbConverter ()" /> <br />
+	TB: <input type = "text" name = "tb" onChange = "tbConverter ()" /> <br />
+    <input type = "button" value = "¡Convertir!" />
 									</form>	
 								</fieldset>								
 							</div>	
