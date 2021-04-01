@@ -73,15 +73,14 @@
 						</div>
 						<div class="col-3 col-md-3 col-lg-3"></div>
 					</div>			
-				
-						
+					
 				<script>
 					function calcular(){		
 						var a = document.f1.a.value;
 						var b = document.f1.b1.value;
 						var x = document.f1.b2.value;
 						var r = document.f1.c.value;
-						r=(parseFloat(a)*parseFloat(x))/parseFloat(b);
+						r=(parseFloat(a)*parseFloat(x))*parseFloat(b);
 						document.f1.c.value=r;
 					}
 				</script>						
@@ -95,10 +94,10 @@
 										<div class="row mt-4">
 											<label for="basic-url" class="form-label width:100%">Valor inicial a convertir</label>
 												<div class="input-group mb-3">
-													<input type="text" class="form-control" id="a" name="a" placeholder="Digite el valor a convertir" >
+													<input type="number" class="form-control" id="a" name="a" placeholder="Digite el valor a convertir" >
 												</div>
 											<label for="basic-url" class="form-label width:100%">Unidad de medida de datos inicial</label>
-												<select name="b1" class="form-control" >
+												<select name="b1" class="form-control">
 													<Option disabled>Unidad de medida inicial</opcion>
 													<option value="1">Byte</option>
 													<option value="1000">Kilobyte</option>	
@@ -110,12 +109,12 @@
 										<div class= "row mt-4">
 											<label for="basic-url" class="form-label width:100%">Unidad de medida de datos final</label>										
 												<select name="b2" class="form-control">
-												<Option  disabled>Seleccione una opcion</option>	 
-												<option value="1">Byte</option>
-												<option value="1000">Kilobyte</option>	
-												<option value="1000000">Megabyte</option>
-												<option value="1000000000" >Gigabyte</option>
-												<option value="1000000000000">Terabyte</option>
+													<Option  disabled>Seleccione una opcion</option>	 
+													<option value="1">Byte</option>
+													<option value="1000">Kilobyte</option>	
+													<option value="1000000">Megabyte</option>
+													<option value="1000000000" >Gigabyte</option>
+													<option value="1000000000000">Terabyte</option>
 												</select>
 										</div>
 												<button type="Button" name="" value="convertir" onclick="calcular()" class="btn_convertir">Convertir</button>
