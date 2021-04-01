@@ -2645,7 +2645,8 @@ fieldset:disabled a.btn {
     border-radius: 0.5rem;
     transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 	margin-top: 20px;
-	width:160px; 
+	margin-bottom: 20px;
+	width:260px; 
 	margin-left:130px;
 }
 
