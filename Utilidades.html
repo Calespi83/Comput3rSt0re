@@ -17,44 +17,42 @@
         <link href="css/styles.css" rel="stylesheet" />
 		
 		<script language = "JavaScript">
-
-function byteConverter () {
-document.converter.kb.value = document.converter.byte.value / 1000
-document.converter.mb.value = document.converter.byte.value / (1000 * 1000)
-document.converter.gb.value = document.converter.byte.value / (1000 * 1000 * 1000)
-document.converter.tb.value = document.converter.byte.value / (1000 * 1000 * 1000 * 1000)
-}
-
-function kbConverter () {
-document.converter.byte.value = document.converter.kb.value * 1000
-document.converter.mb.value = document.converter.kb.value / 1000
-document.converter.gb.value = document.converter.kb.value / (1000 * 1000)
-document.converter.tb.value = document.converter.kkb.value / (1000 * 1000 * 1000)
-}
-
-function mbConverter () {
-document.converter.byte.value = document.converter.mb.value * 1000 * 1000
-document.converter.kb.value = document.converter.mb.value * 1000
-document.converter.gb.value = document.converter.mb.value / 1000
-document.converter.tb.value = document.converter.mb.value / (1000 * 1000)
-}
-
-function gbConverter () {
-document.converter.byte.value = document.converter.gb.value * 1000 * 1000 * 1000
-document.converter.kb.value = document.converter.gb.value * 1000 * 1000
-document.converter.mb.value = document.converter.gb.value * 1000
-document.converter.tb.value = document.converter.gb.value / (1000)
-}
-
-function tbConverter () {
-document.converter.byte.value = document.converter.tb.value * 1000 * 1000 * 1000 * 1000
-document.converter.kb.value = document.converter.tb.value * 1000 * 1000 * 1000
-document.converter.mb.value = document.converter.tb.value * 1000 * 1000
-document.converter.gb.value = document.converter.tb.value * 1000
-}
-
-</script>
-		
+			<!-- Conversion de Byte a ...-->
+			function byteConverter () {
+			document.converter.kb.value = document.converter.byte.value / 1000
+			document.converter.mb.value = document.converter.byte.value / (1000 * 1000)
+			document.converter.gb.value = document.converter.byte.value / (1000 * 1000 * 1000)
+			document.converter.tb.value = document.converter.byte.value / (1000 * 1000 * 1000 * 1000)
+			}
+			<!-- Conversion de KiloByte a ...-->			
+			function kbConverter () {
+			document.converter.byte.value = document.converter.kb.value * 1000
+			document.converter.mb.value = document.converter.kb.value / 1000
+			document.converter.gb.value = document.converter.kb.value / (1000 * 1000)
+			document.converter.tb.value = document.converter.kkb.value / (1000 * 1000 * 1000)
+			}
+			<!-- Conversion de MegaByte a ...-->
+			function mbConverter () {
+			document.converter.byte.value = document.converter.mb.value * 1000 * 1000
+			document.converter.kb.value = document.converter.mb.value * 1000
+			document.converter.gb.value = document.converter.mb.value / 1000
+			document.converter.tb.value = document.converter.mb.value / (1000 * 1000)
+			}
+			<!-- Conversion de GigaByte a ...-->
+			function gbConverter () {
+			document.converter.byte.value = document.converter.gb.value * 1000 * 1000 * 1000
+			document.converter.kb.value = document.converter.gb.value * 1000 * 1000
+			document.converter.mb.value = document.converter.gb.value * 1000
+			document.converter.tb.value = document.converter.gb.value / (1000)
+			}	
+			<!-- Conversion de TeraByte a ...-->	
+			function tbConverter () {
+			document.converter.byte.value = document.converter.tb.value * 1000 * 1000 * 1000 * 1000
+			document.converter.kb.value = document.converter.tb.value * 1000 * 1000 * 1000
+			document.converter.mb.value = document.converter.tb.value * 1000 * 1000
+			document.converter.gb.value = document.converter.tb.value * 1000
+			}
+		</script>		
 </head>
     <body id="page-top">
         <!-- Título página-->
@@ -84,21 +82,23 @@ document.converter.gb.value = document.converter.tb.value * 1000
 							<fieldset>
 								<legend>Valor y Utilidad</legend>
 								<h1>Valor de venta</h1>
-								<!-- FORMULARIO -->
+								<!-- FORMULARIO DE VENTAS-->
 								<label for="basic-url" class="form-label width:100%">Valor de la compra</label>
-								<div class="input-group mb-3">
-									<input type="number" class="form-control" value="" id="compra" aria-describedby="basic-addon3" required>
-								</div>
+									<div class="input-group mb-3">
+										<input type="number" class="form-control" value="" id="compra" aria-describedby="basic-addon3" required>
+									</div>
 								<label for="basic-url" class="form-label">% Utilidad</label>
-								<div class="input-group mb-3">
-									<input type="number" class="form-control" value="" id="utilidad" aria-describedby="basic-addon3" required>
-								</div>
+									<div class="input-group mb-3">
+										<input type="number" class="form-control" value="" id="utilidad" aria-describedby="basic-addon3" required>
+									</div>
 								<label for="basic-url" class="form-label">% IVA</label>
-								<div class="input-group mb-3">
-									<input type="number" class="form-control" value="" id="iva" aria-describedby="basic-addon3" required>
-								</div>
+									<div class="input-group mb-3">
+										<input type="number" class="form-control" value="" id="iva" aria-describedby="basic-addon3" required>
+									</div>
+									<!-- Botón para calcular-->
 								<button type="button" class="btn_calcular" id="calcular">Calcular Valor</button>
 								<br>
+								<!-- RESULTADO DE VENTAS-->
 								<div class="mt-4">
 									<label for="basic-url" class="form-label">Valor de la Venta $</label>
 								</div>
@@ -121,22 +121,29 @@ document.converter.gb.value = document.converter.tb.value * 1000
 								<fieldset class="padding-inline:60px !important">
 										<legend>Convertir</legend>		
 										<h1>Tamaño de datos</h1>
+										<!-- FORMULARIO DE MEDIDA DE ALMACENAMIENTO-->
 									<form name="converter" >
+									<!-- Si se digita valor en Byte-->
 									<label for="basic-url" class="form-label">Byte:</label>
 										<input type = "text" class="form-control" name = "byte" onChange = "byteConverter ()" /> 
 										<br />
+									<!-- Si se digita valor en KB-->	
 									<label for="basic-url" class="form-label">KB:</label>
 										<input type = "text" class="form-control" name = "kb" onChange = "kbConverter ()" /> 
 										<br />
+									<!-- Si se digita valor en MegaByte-->	
 									<label for="basic-url" class="form-label">MB:</label>
 										<input type = "text" class="form-control" name = "mb" onChange = "mbConverter ()" /> 
 										<br />
+									<!-- Si se digita valor en GigaByte-->	
 									<label for="basic-url" class="form-label">GB:</label>
 										<input type = "text" class="form-control" name = "gb" onChange = "gbConverter ()" /> 
 										<br />
+									<!-- Si se digita valor en TeraByte-->	
 									<label for="basic-url" class="form-label">TB:</label>
 										<input type = "text" class="form-control" name = "tb" onChange = "tbConverter ()" /> 
 										<br />
+										<!--Botón convertir unidades-->
 										<input type = "button" class="btn_calcular" value = "¡Convertir!" />
 									</form>	
 								</fieldset>								
@@ -149,9 +156,6 @@ document.converter.gb.value = document.converter.tb.value * 1000
         <!-- Copyright Section-->			
 			<div class="copyright py-4 text-center text-white">	
 				<div class="container"><small>Copyright © Comput3rSt0re 2021</small>
-					<!--<a href="https://twitter.com/UniversidadUNAD?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor" target="blank">
-						<img class="masthead-picture" src="assets/img/Twitter.png" alt="Twitter UNAD" title="Twitter UNAD"/>
-					</a>-->
 				</div>
 			</div>
         <!-- Scroll to Top Button (Only visible on small and extra-small screen sizes)-->
