@@ -1,2 +1,2 @@
-# DSW-CarlosCalvache
-Sitio Web DSW-Carlos Calvache
+# Compu3st0re
+Sitio Web Compu3st0re
