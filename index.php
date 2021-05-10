@@ -36,8 +36,8 @@
                   <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                     <a class="dropdown-item" href="script/crearDB.php">Crear base de datos</a>
                     <a class="dropdown-item" href="script/crearTabla.php">Crear tabla</a>
-					<a class="dropdown-item" href="script/backups.php">Generar reporte PDF</a>
-					<a class="dropdown-item" href="ReportPDF.php">Generar Backup</a>
+					<a class="dropdown-item" href="ReportPDF.php">Generar reporte PDF</a>
+					<a class="dropdown-item" href="script/backups.php">Generar Backup</a>
                   </div>
                 </li>
 				<!--Menú invntario-->
